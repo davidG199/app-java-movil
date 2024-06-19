@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#E9E8F9"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
     <ImageView
         android:id="@+id/logo"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        android:src="@drawable/" />
+        android:src="@drawable/logo_athena" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,10 +47,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnRegistro"
+        android:id="@+id/btnUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registro | Acceso"
+        android:text="David"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:backgroundTint="#4B2A82"
@@ -59,28 +59,36 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TU BIBLIOTECA DIGITAL"
+        android:text="LIBROS"
         android:textSize="24sp"
         android:textColor="#4B2A82"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp" />
 
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar:"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/search_box_background"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#999" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sumérgete en un vasto océano de conocimiento con solo un click."
+        android:text="Explora tu biblioteca digital repleta de infinitas posibilidades para expandir tus horizontes y enriquecer tu mente."
         android:textSize="16sp"
         android:textColor="#000"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp" />
-
-    <ImageView
-        android:id="@+id/booksImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:src="@drawable/books_image" />
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
