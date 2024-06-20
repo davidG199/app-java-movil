@@ -65,15 +65,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sumérgete en un vasto océano de conocimiento con solo un click."
-        android:textSize="16sp"
-        android:textColor="#000"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp" />
-
     <ImageView
         android:id="@+id/booksImage"
         android:layout_width="wrap_content"
@@ -81,6 +72,15 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:src="@drawable/books_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Sumérgete en un vasto océano de conocimiento con solo un click."
+        android:textColor="#000"
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"

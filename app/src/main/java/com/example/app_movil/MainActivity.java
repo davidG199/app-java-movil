@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnRegistro = findViewById(R.id.btnRegistro);
         btnRegistro.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+            Intent intent = new Intent(MainActivity.this, galeria.class );
             startActivity(intent);
         });
     }
