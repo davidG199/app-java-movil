@@ -1,96 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F1FF"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fondo"
+    tools:context=".Registro">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/logo" /> <!-- Reemplaza '@drawable/logo' con tu recurso de imagen real -->
+        android:layout_width="94dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/cuadro_logo"
+        android:padding="10dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnUser"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:drawableLeft="@drawable/baseline_person"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="28dp"
+        android:text="David"
+        android:textColor="#FFF"
+        android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/registerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profileBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="REGISTRARSE"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textColor="#4B2A82"
         android:textStyle="bold" />
 
     <LinearLayout
-        android:id="@+id/formLayout"
+        android:id="@+id/centerLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/registerTitle"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical">
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="40dp"
+        android:layout_marginTop="-40dp">
 
         <EditText
+            android:id="@+id/nombreEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre"
             android:backgroundTint="#4A4AFF"
             android:padding="10dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/cedulaEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Cédula"
             android:backgroundTint="#4A4AFF"
             android:padding="10dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
             android:backgroundTint="#4A4AFF"
             android:padding="10dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña"
             android:backgroundTint="#4A4AFF"
             android:padding="10dp"
             android:layout_marginBottom="10dp"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/confirmPasswordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirmar contraseña"
             android:backgroundTint="#4A4AFF"
             android:padding="10dp"
             android:layout_marginBottom="10dp"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textStyle="bold" />
 
         <CheckBox
-            android:layout_width="wrap_content"
+            android:id="@+id/termsCheckBox"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
             android:text="Acepto términos y condiciones"
             android:buttonTint="#4A4AFF"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/registerButton"
-            android:layout_width="match_parent"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_button"
+            android:drawablePadding="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="28dp"
             android:text="Registrarse"
-            android:background="#4B2A82"
             android:textColor="#FFF"
-            android:padding="12dp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
 
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icono_twitter" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icono_face" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icono_insta" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icono_youtube" />
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--CODIGO ACTUALIZADO-->

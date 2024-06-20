@@ -4,30 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E9E8F9"
-    tools:context=".galeria">
+    android:background="@drawable/fondo"
+    tools:context=".Galeria">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="89dp"
+        android:layout_height="107dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/logo_athena" />
+        android:background="@drawable/cuadro_logo"
+        android:padding="10dp"
+        android:src="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="50dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="INICIO"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,7 +37,8 @@
             android:text="GALERÍA"
             android:textSize="18sp"
             android:layout_marginStart="20dp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,82 +46,108 @@
             android:text="CONTACTO"
             android:textSize="18sp"
             android:layout_marginStart="20dp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/btnUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="David"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#4B2A82"
-        android:textColor="#FFF" />
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:drawableLeft="@drawable/baseline_person"
+        android:drawablePadding="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="28dp"
+        android:text="David"
+        android:textColor="#FFF"
+        android:textSize="12sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LIBROS"
-        android:textSize="24sp"
         android:textColor="#4B2A82"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="60dp"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/searchBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
         android:hint="Buscar:"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/search_box_background"
+        android:layout_gravity="center_horizontal"
         android:padding="10dp"
+        android:background="@drawable/rounded_seeker"
         android:textColor="#000"
-        android:textColorHint="#999" />
+        android:textColorHint="#999"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/libros"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Explora tu biblioteca digital repleta de infinitas posibilidades para expandir tus horizontes y enriquecer tu mente."
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:textColor="#000"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:gravity="center" />
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="54dp"
+        android:padding="10dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/twitter_icon"
+            android:src="@drawable/icono_twitter"
             android:layout_marginEnd="10dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/facebook_icon"
+            android:src="@drawable/icono_face"
             android:layout_marginEnd="10dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/instagram_icon"
+            android:src="@drawable/icono_insta"
             android:layout_marginEnd="10dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/youtube_icon" />
+            android:src="@drawable/icono_youtube" />
     </LinearLayout>
 
 </LinearLayout>
+
+
+
+<!--CODIGO ACTUALIZADO-->

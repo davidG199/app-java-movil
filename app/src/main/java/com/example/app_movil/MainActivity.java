@@ -3,6 +3,7 @@ package com.example.app_movil;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,8 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnRegistro = findViewById(R.id.btnRegistro);
         btnRegistro.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, galeria.class );
+            Intent intent = new Intent(MainActivity.this, Galeria.class);
             startActivity(intent);
         });
     }
 }
+//<!--CODIGO ACTUALIZADO-->

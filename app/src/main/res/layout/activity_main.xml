@@ -4,30 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E9E8F9"
+    android:background="@drawable/fondo_libros"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="94dp"
+        android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/" />
+        android:background="@drawable/cuadro_logo"
+        android:padding="10dp"
+        android:src="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="50dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="INICIO"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,7 +37,8 @@
             android:text="GALERÍA"
             android:textSize="18sp"
             android:layout_marginStart="20dp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,74 +46,99 @@
             android:text="CONTACTO"
             android:textSize="18sp"
             android:layout_marginStart="20dp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/btnRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registro | Acceso"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#4B2A82"
-        android:textColor="#FFF" />
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:drawableLeft="@drawable/baseline_person"
+        android:drawablePadding="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="28dp"
+        android:text="Registro | Acceso"
+        android:textColor="#FFF"
+        android:textSize="12sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TU BIBLIOTECA DIGITAL"
-        android:textSize="24sp"
+        android:text="TU BIBLIOTECA"
+        android:textSize="37sp"
         android:textColor="#4B2A82"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp" />
-
-    <ImageView
-        android:id="@+id/booksImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/books_image" />
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="DIGITAL"
+        android:textSize="72dp"
+        android:textColor="#4B2A82"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:text="Sumérgete en un vasto océano de conocimiento con solo un click."
+        android:layout_marginTop="-14dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sumérgete en un vasto océano de conocimiento"
+        android:textSize="14sp"
         android:textColor="#000"
-        android:textSize="16sp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="con solo un click."
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="left"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="172dp"
+        android:layout_marginLeft="44dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/twitter_icon"
+            android:src="@drawable/icono_twitter"
             android:layout_marginEnd="10dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/facebook_icon"
+            android:src="@drawable/icono_face"
             android:layout_marginEnd="10dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/instagram_icon"
+            android:src="@drawable/icono_insta"
             android:layout_marginEnd="10dp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/youtube_icon" />
+            android:src="@drawable/icono_youtube" />
     </LinearLayout>
 
 </LinearLayout>
+
+<!--CODIGO ACTUALIZADO-->

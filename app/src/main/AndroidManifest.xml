@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".registro"
+            android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".galeria"
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".Galeria"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
