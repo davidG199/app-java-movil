@@ -1,11 +1,10 @@
 package com.example.app_movil;
 
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Registro extends AppCompatActivity {
@@ -21,9 +20,13 @@ public class Registro extends AppCompatActivity {
         EditText passwordEditText = findViewById(R.id.passwordEditText);
         EditText confirmPasswordEditText = findViewById(R.id.confirmPasswordEditText);
         CheckBox termsCheckBox = findViewById(R.id.termsCheckBox);
-        Button registerButton = findViewById(R.id.registerButton);
 
-        registerButton.setOnClickListener(v -> {
+        ImageButton biSave = findViewById(R.id.biSave);
+        ImageButton biSearch = findViewById(R.id.biSearch);
+        ImageButton biEdit = findViewById(R.id.biEdit);
+        ImageButton biDelet = findViewById(R.id.biDelet);
+
+        biSave.setOnClickListener(v -> {
             String nombre = nombreEditText.getText().toString();
             String cedula = cedulaEditText.getText().toString();
             String email = emailEditText.getText().toString();
@@ -38,9 +41,24 @@ public class Registro extends AppCompatActivity {
             } else if (!termsAccepted) {
                 Toast.makeText(Registro.this, "Debes aceptar los términos y condiciones", Toast.LENGTH_SHORT).show();
             } else {
+                // Aquí puedes agregar la lógica para guardar los datos
                 Toast.makeText(Registro.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
             }
         });
+
+        biSearch.setOnClickListener(v -> {
+            // Agrega aquí la lógica para buscar un usuario registrado
+            Toast.makeText(Registro.this, "Buscar usuario", Toast.LENGTH_SHORT).show();
+        });
+
+        biEdit.setOnClickListener(v -> {
+            // Agrega aquí la lógica para editar un usuario registrado
+            Toast.makeText(Registro.this, "Editar usuario", Toast.LENGTH_SHORT).show();
+        });
+
+        biDelet.setOnClickListener(v -> {
+            // Agrega aquí la lógica para eliminar un usuario registrado
+            Toast.makeText(Registro.this, "Eliminar usuario", Toast.LENGTH_SHORT).show();
+        });
     }
 }
-//<!--CODIGO ACTUALIZADO-->

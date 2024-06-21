@@ -19,6 +19,9 @@
             android:name=".Galeria"
             android:exported="false" />
         <activity
+            android:name=".Agregar_Libro"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
