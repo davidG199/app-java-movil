@@ -48,102 +48,104 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical"
+        android:layout_marginTop="-40dp"
         android:gravity="center"
-        android:padding="40dp"
-        android:layout_marginTop="-40dp">
+        android:orientation="vertical"
+        android:padding="40dp">
 
         <EditText
             android:id="@+id/idLibroEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Id Libro:"
-            android:backgroundTint="#4A4AFF"
-            android:padding="10dp"
             android:layout_marginBottom="5dp"
+            android:backgroundTint="#4A4AFF"
+            android:hint="Id Libro:"
+            android:padding="10dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/tituloEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Titulo:"
-            android:backgroundTint="#4A4AFF"
-            android:padding="10dp"
             android:layout_marginBottom="5dp"
+            android:backgroundTint="#4A4AFF"
+            android:hint="Titulo:"
+            android:padding="10dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/autorEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Autor:"
-            android:backgroundTint="#4A4AFF"
-            android:padding="10dp"
             android:layout_marginBottom="5dp"
+            android:backgroundTint="#4A4AFF"
+            android:hint="Autor:"
+            android:padding="10dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editorialEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Editorial:"
-            android:backgroundTint="#4A4AFF"
-            android:padding="10dp"
             android:layout_marginBottom="5dp"
+            android:backgroundTint="#4A4AFF"
+            android:hint="Editorial:"
             android:inputType="textPassword"
+            android:padding="10dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/generoEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Genero:"
-            android:backgroundTint="#4A4AFF"
-            android:padding="10dp"
             android:layout_marginBottom="5dp"
+            android:backgroundTint="#4A4AFF"
+            android:hint="Genero:"
             android:inputType="textPassword"
+            android:padding="10dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/stockEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Stock:"
             android:backgroundTint="#4A4AFF"
-            android:padding="10dp"
+            android:hint="Stock:"
             android:inputType="textPassword"
+            android:padding="10dp"
             android:textStyle="bold" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/biSave"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/baseline_save_24"
                 android:background="@drawable/rounded_button_save"
+                android:src="@drawable/baseline_save_24"
                 android:textColor="#FFF" />
+
             <ImageButton
                 android:id="@+id/biSearch"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/baseline_search_24"
-                android:background="@drawable/rounded_button_save"/>
+                android:background="@drawable/rounded_button_save"
+                android:src="@drawable/baseline_search_24" />
+
             <ImageButton
                 android:id="@+id/biEdit"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/baseline_edit_24"
-                android:background="@drawable/rounded_button_save"/>
+                android:background="@drawable/rounded_button_save"
+                android:src="@drawable/baseline_edit_24" />
         </LinearLayout>
 
         <LinearLayout
@@ -156,15 +158,16 @@
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/baseline_delete_24"
-                android:background="@drawable/rounded_button_save"/>
+                android:background="@drawable/rounded_button_save"
+                android:src="@drawable/baseline_delete_24" />
+
             <ImageButton
                 android:id="@+id/biList"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:layout_margin="5dp"
-                android:src="@drawable/baseline_list_24"
-                android:background="@drawable/rounded_button_save"/>
+                android:background="@drawable/rounded_button_save"
+                android:src="@drawable/baseline_list_24" />
         </LinearLayout>
 
     </LinearLayout>

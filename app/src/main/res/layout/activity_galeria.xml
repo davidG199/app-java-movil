@@ -23,31 +23,41 @@
         android:gravity="center"
         android:layout_marginTop="50dp">
 
-        <TextView
+        <Button
+            android:id="@+id/btnInicio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#4B2A82"
+            android:shadowColor="#FFFFFF"
             android:text="INICIO"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:textColor="#000"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
-        <TextView
+        <Button
+            android:id="@+id/btnGaleria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="#4B2A82"
+            android:shadowColor="#FFFFFF"
             android:text="GALERÍA"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:layout_marginStart="20dp"
-            android:textColor="#000"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
-        <TextView
+        <Button
+            android:id="@+id/btnContacto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CONTACTO"
-            android:textSize="18sp"
             android:layout_marginStart="20dp"
-            android:textColor="#000"
-            android:textStyle="bold"/>
+            android:backgroundTint="#4B2A82"
+            android:shadowColor="#FFFFFF"
+            android:text="CONTACTO"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <Button
@@ -91,54 +101,43 @@
         android:textSize="18dp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:src="@drawable/libros"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Explora tu biblioteca digital repleta de infinitas posibilidades para expandir tus horizontes y enriquecer tu mente."
-        android:textSize="12sp"
-        android:textColor="#000"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:gravity="center"
-        android:layout_marginBottom="30dp"
-        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLibros"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:scrollbars="vertical" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="center"
         android:layout_marginTop="54dp"
-        android:padding="10dp">
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_height="1dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icono_twitter"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icono_twitter" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icono_face"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icono_face" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icono_insta"
-            android:layout_marginEnd="10dp" />
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icono_insta" />
 
         <ImageView
             android:layout_width="wrap_content"
