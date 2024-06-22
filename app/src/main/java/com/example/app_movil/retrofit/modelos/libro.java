@@ -7,7 +7,7 @@ public class libro {
     private String autor;
     private String sinopsis;
     private String genero;
-    private int anoCreacion;
+    private int añoCreacion;
     private int Stock;
     private String imagePath;
 
@@ -55,12 +55,12 @@ public class libro {
         this.genero = genero;
     }
 
-    public int getAnoCreacion() {
-        return anoCreacion;
+    public int getAñoCreacion() {
+        return añoCreacion;
     }
 
-    public void setAnoCreacion(int anoCreacion) {
-        this.anoCreacion = anoCreacion;
+    public void setAñoCreacion(int añoCreacion) {
+        this.añoCreacion = añoCreacion;
     }
 
     public String getImagePath() {

@@ -32,11 +32,13 @@ public class LibroAdapter extends RecyclerView.Adapter<LibroAdapter.LibroViewHol
     public void onBindViewHolder(@NonNull LibroViewHolder holder, int position) {
         libro libro = libros.get(position);
         holder.tituloLibro.setText(libro.getTitulo());
+
         // Usa Glide para cargar la imagen
         Glide.with(holder.itemView.getContext())
-                .load(libro.getImagePath())
+                .load("http://127.0.0.1:8000" + libro.getImagePath())
                 .into(holder.imagenLibro);
     }
+
     @Override
     public int getItemCount() {
         return libros.size();

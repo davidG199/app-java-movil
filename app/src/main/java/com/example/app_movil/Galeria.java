@@ -33,7 +33,7 @@ public class Galeria extends AppCompatActivity {
         setContentView(R.layout.activity_galeria);
 
         //configurar retrofit
-        Retrofit retrofit = retrofitConfig.getInstancia("http://127.0.0.1:8000/libros");
+        Retrofit retrofit = retrofitConfig.getInstancia("http://127.0.0.1:8000/");
         interfazApi = retrofit.create(InterfazApi.class);
 
         //iniziar RecyclerView
@@ -60,21 +60,25 @@ public class Galeria extends AppCompatActivity {
             //si la peticion obtiene una respuesta
             @Override
             public void onResponse(@NonNull Call<List<libro>> call, @NonNull Response<List<libro>> response) {
+                Log.d("galeria", response.body().toString());
                 //si la respuesta es correcta (ok)
                 if (response.isSuccessful() && response.body() != null) {
                     List<libro> libros = response.body();
                     libroAdapter = new LibroAdapter(libros);
                     recyclerViewLibros.setAdapter(libroAdapter);
-                    Log.d("log",response.body().toString());
+                    Log.d("log", response.body().toString());
+                    Log.d("galeria", "libros obtenidos" + libros.toString());
                 } else //si la respuesta es diferente de ok
                 {
                     Toast.makeText(Galeria.this, "Error al obtener los libros", Toast.LENGTH_SHORT).show();
+                    Log.e("error", "Error en la respuesta: " + response.message());
                 }
             }
             //si no obtiene respuesta
             @Override
             public void onFailure(@NonNull Call<List<libro>> call, @NonNull Throwable t) {
                 Toast.makeText(Galeria.this, "Error de la api: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e("error", "Error de la API: ", t);
             }
         });
     }
